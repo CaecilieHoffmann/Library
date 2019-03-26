@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Search the library: <input type="text" id="search" value="">
+
+<button onclick="myFunction()">Search</button>
+
+<div id="shelf1" style="background-color:grey;padding:20px;width:70px;">BIRDS</div>
+<br/>
+<div id="shelf2" style="background-color:grey;padding:20px;width:70px;">MAMMALS</div>
+<br/>
+<div id="shelf3" style="background-color:grey;padding:20px;width:70px;">REPTILES</div>
+
+
+<script>
+function myFunction() {
+  /*WHAT YOU TYPE IN THE SEARCH BAR*/
+  var book = document.getElementById("search").value;
+  
+  /*BIRDS*/
+  var category_birds = ["Eagle", "Pigeon", "Sparrow"];
+  var answer_birds = category_birds.includes (book);
+  if (answer_birds == true){
+  	document.getElementById("shelf1").style.backgroundColor = "green";
+  }
+  
+  /*MAMMALS*/
+  var category_mammals = ["Cat", "Dog", "Rabbit"];
+  var answer_mammals = category_mammals.includes (book);
+  if (answer_mammals == true){
+  	document.getElementById("shelf2").style.backgroundColor = "green";
+  }
+  
+  /*REPTILES*/
+  var category_reptiles = ["Lizard", "Gecko", "Turtle"];
+  var answer_reptiles = category_reptiles.includes (book);
+  if (answer_reptiles == true){
+  	document.getElementById("shelf3").style.backgroundColor = "green";
+  }
+  
+  
+
+  
+}
+</script>
+
+</body>
+</html>
