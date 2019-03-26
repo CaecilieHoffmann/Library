@@ -1,0 +1,86 @@
+.boxes {
+    background-color: antiquewhite;
+    width: 10%;
+    height: 10%;
+    float: left;
+    font-size: 1em;
+}
+
+#shelf2 {
+    background-color: aquamarine;
+    width: 50%;
+    height: 10%;
+    float: left;
+    margin-left: 5%;
+    font-size: 1em;
+}
+
+#shelf3 {
+    background-color: coral;
+    width: 40%;
+    padding-bottom: 2%;
+    float: left;
+    margin-left: 50%;
+    margin-top: 5%;
+    font-size: 1em;
+}
+
+#shelf4 {
+    background-color: cornflowerblue;
+    width: 25%;
+    padding-bottom: 2%;
+    float: left;
+    margin-top: 1%;
+    margin-left: 10%;
+    font-size: 1em;
+}
+
+#shelf5 {
+    background-color: deeppink;
+    width: 30%;
+    padding-bottom: 2%;
+    float: left;
+    margin-top: 1%;
+    margin-left: 50%;
+    font-size: 1em;
+}
+
+#shelf6 {
+    background-color: darkseagreen;
+    width: 25%;
+    padding-bottom: 2%;
+    float: left;
+    margin-left: 10%;
+    margin-top: 1%;
+    font-size: 1em;
+}
+
+#shelf7 {
+    background-color: darkorchid;
+    width: 30%;
+    padding-bottom: 2%;
+    float: left;
+    margin-left: 50%;
+    margin-top: 1%;
+    font-size: 1em;
+}
+
+#shelf8 {
+    background-color: coral;
+    width: 40%;
+    padding-bottom: 2%;
+    float: left;
+    margin-left: 50%;
+    margin-top: 5%;
+    font-size: 1em;
+}
+
+#shelf9 {
+    background-color: aquamarine;
+    width: 70%;
+    height: 10%;
+    float: left;
+    margin-left: 25%;
+    margin-top: 3%;
+    font-size: 1em;
+}
