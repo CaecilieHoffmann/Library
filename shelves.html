@@ -16,58 +16,125 @@
 Search the library: <input type="text" id="search" value="">
     
 
-<button onclick="myFunction()">couch</button>
+<button onclick="myFunction()">Search</button>
     <br/>
 
 <!--Sectiones on the frst shelf-->
 
-<div id="box1" class="boxes">BOX1</div>
-<div id="box2" class="boxes">BOX2</div>
-<div id="box3" class="boxes">BOX3</div>
-<div id="box4" class="boxes">BOX4</div>
+<div id="shelf1" class="boxes">SHELF 1</div>
+<div id="shelf2" class="boxes">SHELF 2</div>
+<div id="shelf3" class="boxes">SHELF 3</div>
+<div id="shelf4" class="boxes">SHELF 4</div>
 
 <!--Other shelves-->
 
-<div id="shelf2">SHELF2</div>
-<div id="shelf3">SHELF3</div>
-<div id="shelf4">SHELF4</div>
-<div id="shelf5">SHELF5</div> 
+<div id="shelf5">SHELF5</div>
 <div id="shelf6">SHELF6</div>
 <div id="shelf7">SHELF7</div>
-<div id="shelf8">SHELF8</div>
-<div id="shelf9">SHELF9</div> 
-    
+<div id="shelf8">SHELF8</div> 
+<div id="shelf9">SHELF9</div>
+<div id="shelf10">SHELF10</div>
+<div id="shelf11">SHELF11</div>
+<div id="shelf12">SHELF12</div> 
+
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>    
     
 <script>
 function myFunction() {
   /*VALUE YOU TYPE IN THE SEARCH BAR*/
+  
   var book = document.getElementById("search").value;
 
-  /*BIRDS*/
-  var category_birds = ["Eagle", "Pigeon", "Sparrow"];
-  var answer_birds = category_birds.includes (book);
-  if (answer_birds == true){
-  	document.getElementById("box1").style.backgroundColor = "green";
+
+  /*SHELF 1 */
+
+  /*TYPOGRAPHY*/
+  var category_typography = ["Typographic Universe", "Shadow Type", "Typography Sketchbooks"];
+  var answer_typography = category_typography.includes (book);
+  if (answer_typography == true){
+  	document.getElementById("shelf1").style.backgroundColor = "green";
+    var modal = document.getElementById('myModal');
+    var shelf_1 = document.getElementById('shelf1');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    shelf_1.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = "img/shelf_typography.jpg";
+      captionText.innerHTML = ("Your book is here");
+}
+
   }
 
-  /*MAMMALS*/
-  var category_mammals = ["Cat", "Dog", "Rabbit"];
-  var answer_mammals = category_mammals.includes (book);
-  if (answer_mammals == true){
-  	document.getElementById("shelf2").style.backgroundColor = "green";
+  /*INTERNET AS MEDIA*/
+  var category_internet = ["Cat", "Dog", "Rabbit"];
+  var answer_internet = category_internet.includes (book);
+  if (answer_internet == true){
+  	document.getElementById("shelf1").style.backgroundColor = "green";
+    var modal = document.getElementById('myModal');
+    var shelf_1 = document.getElementById('shelf1');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    shelf_1.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = "img/shelf_internet.jpg";
+      captionText.innerHTML = ("Your book is here");
+}
+
   }
 
-  /*REPTILES*/
-  var category_reptiles = ["Lizard", "Gecko", "Turtle"];
-  var answer_reptiles = category_reptiles.includes (book);
-  if (answer_reptiles == true){
-  	document.getElementById("shelf3").style.backgroundColor = "green";
+  /*JOURNALISM*/
+  var category_journalism = ["Lizard", "Gecko", "Turtle"];
+  var answer_journalism = category_journalism.includes (book);
+  if (answer_journalism == true){
+  	document.getElementById("shelf1").style.backgroundColor = "green";
   }
 
+  /*PHILOSOPHY*/
+  var category_philosophy = ["Lizard", "Gecko", "Turtle"];
+  var answer_philosophy = category_philosophy.includes (book);
+  if (answer_philosophy == true){
+    document.getElementById("shelf1").style.backgroundColor = "green";
+  }
 
+  /*PSYCHOLOGY*/
+  var category_psychology = ["Lizard", "Gecko", "Turtle"];
+  var answer_psychology = category_psychology.includes (book);
+  if (answer_psychology == true){
+    document.getElementById("shelf1").style.backgroundColor = "green";
+  }
+
+  /*SHELF 2 - CREATIVE + PERSONAL*/
+
+  /*CREATIVITY*/
+  var category_creativity = ["Lizard", "Gecko", "Turtle"];
+  var answer_creativity = category_creativity.includes (book);
+  if (answer_creativity == true){
+    document.getElementById("shelf2").style.backgroundColor = "green";
+  }
+  /*PERSONAL DEVELOPMENT*/
+  var category_personal = ["Lizard", "Gecko", "Turtle"];
+  var answer_personal = category_personal.includes (book);
+  if (answer_personal == true){
+    document.getElementById("shelf2").style.backgroundColor = "green";
+  }
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
 
 
 }
+
+
 </script>
 
 </body>
