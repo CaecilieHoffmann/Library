@@ -62,14 +62,15 @@ function myFunction() {
   var category_typography = ["Typographic Universe", "Shadow Type", "Typography Sketchbooks"];
   var answer_typography = category_typography.includes (book);
   if (answer_typography == true){
-  	document.getElementById("shelf1").style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)"; 
-    document.getElementById("shelf1").style.animation = "pulse 2s infinite";
-    document.getElementById("shelf1").style.border = "2px solid	#FFD300";
-    document.getElementById("shelf1").style.textShadow = "1px 1px 2px #ffffff" ;
-    document.getElementById("shelf1").style.boxShadow = "50px solid	#FFD300";
-    document.getElementById("shelf1").innerHTML = "click here";
     var modal = document.getElementById('myModal');
     var shelf_1 = document.getElementById('shelf1');
+    shelf_1.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
+    shelf_1.style.animation = "pulse 2s infinite";
+    shelf_1.style.border = "2px solid #FFD300";
+    shelf_1.style.textShadow = "1px 1px 2px #ffffff" ;
+    shelf_1.style.cursor = "pointer" ;
+    shelf_1.innerHTML = "click here";
+
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
     shelf_1.onclick = function(){
