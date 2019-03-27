@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-shelves.css">
+    <script type="text/javascript">
+      alert("Turn your device horizontally for better experience");
+    </script>
     
     
 </head>
@@ -13,11 +16,12 @@
     
 <body>
 
-Search the library: <input type="text" id="search" value="">
+Search the library: <input type="text" id="search" value="Typographic Universe">
     
 
 <button onclick="myFunction()">Search</button>
-    <br/>
+<br><br>
+
 
 <!--Sectiones on the frst shelf-->
 
@@ -26,6 +30,7 @@ Search the library: <input type="text" id="search" value="">
 <div id="shelf3" class="boxes">SHELF 3</div>
 <div id="shelf4" class="boxes">SHELF 4</div>
 
+    
 <!--Other shelves-->
 
 <div id="shelf5">SHELF5</div>
@@ -57,7 +62,12 @@ function myFunction() {
   var category_typography = ["Typographic Universe", "Shadow Type", "Typography Sketchbooks"];
   var answer_typography = category_typography.includes (book);
   if (answer_typography == true){
-  	document.getElementById("shelf1").style.backgroundColor = "green";
+  	document.getElementById("shelf1").style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)"; 
+    document.getElementById("shelf1").style.animation = "pulse 2s infinite";
+    document.getElementById("shelf1").style.border = "2px solid	#FFD300";
+    document.getElementById("shelf1").style.textShadow = "1px 1px 2px #ffffff" ;
+    document.getElementById("shelf1").style.boxShadow = "50px solid	#FFD300";
+    document.getElementById("shelf1").innerHTML = "click here";
     var modal = document.getElementById('myModal');
     var shelf_1 = document.getElementById('shelf1');
     var modalImg = document.getElementById("img01");
@@ -65,7 +75,7 @@ function myFunction() {
     shelf_1.onclick = function(){
       modal.style.display = "block";
       modalImg.src = "img/shelf_typography.jpg";
-      captionText.innerHTML = ("Your book is here");
+      captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
 }
 
   }
@@ -82,7 +92,7 @@ function myFunction() {
     shelf_1.onclick = function(){
       modal.style.display = "block";
       modalImg.src = "img/shelf_internet.jpg";
-      captionText.innerHTML = ("Your book is here");
+      captionText.innerHTML = ("Your book is here. To find another book, please refresh");
 }
 
   }
