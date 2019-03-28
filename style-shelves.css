@@ -1,6 +1,41 @@
+body {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 0.7em;
+    background-color: beige;
+}
+
+#search{
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 0.8em;
+    -webkit-appearance:none;
+    background-color: beige;
+    border: none;
+    border-bottom: 1px solid black;
+    
+}
+
+button {
+
+    display: inline-block;
+    border: none;
+    padding: 0.3rem 1.5rem;
+    margin: 0;
+    text-decoration: none;
+    background: #ffd000;
+    color: black;
+    font-family: 'Gothic A1',sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 .boxes {
-    background-color: #FFFF33;
-    border: 1px solid #CCCC00;
+    background-color: gray;
+    color: gray;
+    border: 1px solid dimgray;
     width: 10%;
     height: 10%;
     float: left;
@@ -8,7 +43,7 @@
 }
 
 #shelf5 {
-    background-color: aquamarine;
+    background-color: gray;
     width: 50%;
     height: 10%;
     float: left;
@@ -17,7 +52,7 @@
 }
 
 #shelf6 {
-    background-color: coral;
+    background-color: gray;
     width: 40%;
     padding-bottom: 2%;
     float: left;
@@ -27,7 +62,7 @@
 }
 
 #shelf7 {
-    background-color: cornflowerblue;
+    background-color: gray;
     width: 25%;
     padding-bottom: 2%;
     float: left;
@@ -37,7 +72,7 @@
 }
 
 #shelf8 {
-    background-color: deeppink;
+    background-color: gray;
     width: 30%;
     padding-bottom: 2%;
     float: left;
@@ -47,7 +82,7 @@
 }
 
 #shelf9 {
-    background-color: darkseagreen;
+    background-color: gray;
     width: 25%;
     padding-bottom: 2%;
     float: left;
@@ -57,7 +92,7 @@
 }
 
 #shelf10 {
-    background-color: darkorchid;
+    background-color: gray;
     width: 30%;
     padding-bottom: 2%;
     float: left;
@@ -67,7 +102,7 @@
 }
 
 #shelf11 {
-    background-color: coral;
+    background-color: gray;
     width: 40%;
     padding-bottom: 2%;
     float: left;
@@ -77,7 +112,7 @@
 }
 
 #shelf12 {
-    background-color: aquamarine;
+    background-color: gray;
     width: 70%;
     height: 10%;
     float: left;
@@ -117,7 +152,9 @@
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+ /* max-width: 700px;*/
+    max-height: 70vh;
+    max-width: 40vh;
 }
 
 /* Caption of Modal Image */
@@ -154,8 +191,9 @@
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
+  color: gray;
+text-shadow: 1px 1px #ffd000;
+  font-size: 20px;
   font-weight: bold;
   transition: 0.3s;
 }
