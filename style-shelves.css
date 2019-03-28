@@ -1,11 +1,11 @@
 body {
-    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.7em;
     background-color: beige;
 }
 
 #search{
-    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.8em;
     -webkit-appearance:none;
     background-color: beige;
