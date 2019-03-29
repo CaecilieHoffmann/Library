@@ -172,7 +172,7 @@ function myFunction() {
   /*SHELF 1 */
 
   /*SHELF 1- TYPOGRAPHY*/
-  var category_typography = ["Typographic Universe", "Shadow Type", "Typography Sketchbooks"];
+  var category_typography = ["Typographic Universe", "Shadow Type", "Typography Sketchbooks", "Type Matters", "Helvetica", "New Ornamental Type", "Draw Your Own Fonts", "Arabic for Designers", "Principles of Organising Type", "Type Idea Index", "Type Object", "How to Use Type", "Type on Screen"];
   var answer_typography = category_typography.includes (book);
   if (answer_typography == true){
     var modal = document.getElementById('myModal');
@@ -188,34 +188,193 @@ function myFunction() {
     var captionText = document.getElementById("caption");
     shelf_1.onclick = function(){
       modal.style.display = "block";
-      modalImg.src = "img/shelf_typography.jpg";
+      modalImg.src = "img/Typography.png";
       captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
 }
 
   }
 
   /*SHELF 1- INTERNET AS MEDIA*/
+    
+      var category_internet = ["SEO", "WEB Search Skills", "Teaching Online", "Keeping Up With Emerging Technologies", "Cyber World", "The Invisible Web"];
+  var answer_internet = category_internet.includes (book);
+  if (answer_internet == true){
+    var modal = document.getElementById('myModal');
+    var shelf_1 = document.getElementById('shelf1');
+    shelf_1.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
+    shelf_1.style.animation = "pulse 2s infinite";
+    shelf_1.style.border = "2px solid #FFD300";
+    shelf_1.style.textShadow = "1px 1px 2px #ffffff" ;
+    shelf_1.style.cursor = "pointer" ;
+    shelf_1.innerHTML = "click here";
+    shelf_1.style.color = "black";
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    shelf_1.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = "img/Internet.png";
+      captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
+}
+
+  }
+    
+    
  
   /*SHELF 1- JOURNALISM*/
+    
+  var category_journalism = ["Digital Media and Innovation", "Free Ride", "The Content Strategy Toolkit", "Remediation", "Writing on the Wall", "Writing and Editing for Digital Media", "Writing for the Web", "The Social Media Reader", "Moving Media Studies"];
+  var answer_journalism = category_journalism.includes (book);
+  if (answer_journalism == true){
+    var modal = document.getElementById('myModal');
+    var shelf_1 = document.getElementById('shelf1');
+    shelf_1.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
+    shelf_1.style.animation = "pulse 2s infinite";
+    shelf_1.style.border = "2px solid #FFD300";
+    shelf_1.style.textShadow = "1px 1px 2px #ffffff" ;
+    shelf_1.style.cursor = "pointer" ;
+    shelf_1.innerHTML = "click here";
+    shelf_1.style.color = "black";
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    shelf_1.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = "img/Journalism.png";
+      captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
+}
+
+  }
+    
+    
   
-  /*SHELF 1- PHILOSOPHY*/
+  /*SHELF 1- PHILOSOPHY (not done)*/ 
+    
+      var category_philosophy = ["Philosophy for Dummies", "Oxford Dictionary of Philosophy", "Politikens Filosofi Leksikon", "Filosofi", "Filosofisk Leksikon", "Det Filosofiske Blik", "Filosofi og Common Sense"];
+  var answer_philosophy = category_philosophy.includes (book);
+  if (answer_philosophy == true){
+    var modal = document.getElementById('myModal');
+    var shelf_1 = document.getElementById('shelf1');
+    shelf_1.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
+    shelf_1.style.animation = "pulse 2s infinite";
+    shelf_1.style.border = "2px solid #FFD300";
+    shelf_1.style.textShadow = "1px 1px 2px #ffffff" ;
+    shelf_1.style.cursor = "pointer" ;
+    shelf_1.innerHTML = "click here";
+    shelf_1.style.color = "black";
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    shelf_1.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = "img/shelf_typography.jpg";  /*WRONG PICTURE*/ 
+      captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
+}
+
+  }
+
 
   /*SHELF 1- PSYCHOLOGY*/
- 
- 
+
+   var category_psychology = ["Psykologiske Grundtemaer", "Body Language", "Breakpoint", "Your Brain and Business", "Guide to Communicating with Color", "A Brain for Business"];
+  var answer_psychology = category_psychology.includes (book);
+  if (answer_psychology == true){
+    var modal = document.getElementById('myModal');
+    var shelf_1 = document.getElementById('shelf1');
+    shelf_1.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
+    shelf_1.style.animation = "pulse 2s infinite";
+    shelf_1.style.border = "2px solid #FFD300";
+    shelf_1.style.textShadow = "1px 1px 2px #ffffff" ;
+    shelf_1.style.cursor = "pointer" ;
+    shelf_1.innerHTML = "click here";
+    shelf_1.style.color = "black";
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    shelf_1.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = "img/Psychology.png";
+      captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
+}
+
+  }
 
   /*SHELF 2- CREATIVITY*/
+    
+  var category_creativity = ["The myths of creativity", "Breakthrough Thinking", "Thinkertoys", "Thinking in New Boxes", "Inspired", "Insight Out", "Design Attitude", "Creative Stuff", "Ideal Problem Solver"];
+  var answer_creativity = category_creativity.includes (book);
+  if (answer_creativity == true){
+    var modal = document.getElementById('myModal');
+    var shelf_2 = document.getElementById('shelf2');
+    shelf_1.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
+    shelf_1.style.animation = "pulse 2s infinite";
+    shelf_1.style.border = "2px solid #FFD300";
+    shelf_1.style.textShadow = "1px 1px 2px #ffffff" ;
+    shelf_1.style.cursor = "pointer" ;
+    shelf_1.innerHTML = "click here";
+    shelf_1.style.color = "black";
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    shelf_1.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = "img/Creativity.png";
+      captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
+}
+
+  }
+    
     
   /*SHELF 2 and 3- PERSONAL DEVELOPMENT*/ /*Cecilie, don't do it for this one because it is 2 shelves at once*/ 
     
 
   /*SHELF 3- PHILOSOPHY OF SCIENCE*/
     
+  var category_science = ["The Philosophy of Science", "Critical Theory", "Kvalitative Metoder", "What is This Thing Called Science"];
+  var answer_science = category_science.includes (book);
+  if (answer_science == true){
+    var modal = document.getElementById('myModal');
+    var shelf_3 = document.getElementById('shelf3');
+    shelf_1.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
+    shelf_1.style.animation = "pulse 2s infinite";
+    shelf_1.style.border = "2px solid #FFD300";
+    shelf_1.style.textShadow = "1px 1px 2px #ffffff" ;
+    shelf_1.style.cursor = "pointer" ;
+    shelf_1.innerHTML = "click here";
+    shelf_1.style.color = "black";
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    shelf_1.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = "img/Science.png";
+      captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
+}
+
+  }
+    
     
   /*SHELF 3 and 4- STUDY SKILLS*/  /*Cecilie, don't do it for this one because it is 2 shelves at once*/
     
     
-  /*SHELF 4- COMMUNICATION THEORY*/
+  /*SHELF 4- COMMUNICATION THEORY (not done)*/
+    
+  var category_communication = ["The Filter Bubble", "Everybody Writes", "The Future Does Not Compute", "Information Arts", "Information Design", "Living in Information", "Global Communication"];
+  var answer_communication = category_communication.includes (book);
+  if (answer_communication == true){
+    var modal = document.getElementById('myModal');
+    var shelf_4 = document.getElementById('shelf4');
+    shelf_1.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
+    shelf_1.style.animation = "pulse 2s infinite";
+    shelf_1.style.border = "2px solid #FFD300";
+    shelf_1.style.textShadow = "1px 1px 2px #ffffff" ;
+    shelf_1.style.cursor = "pointer" ;
+    shelf_1.innerHTML = "click here";
+    shelf_1.style.color = "black";
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    shelf_1.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = "img/Communication.png";
+      captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
+}
+
+  }
+    
     
     
     
