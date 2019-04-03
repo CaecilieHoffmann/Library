@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style-shelves.css">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
 
-    <script type="text/javascript">
-     /*alert("Turn your device horizontally for better experience");*/
-    </script>
+    <!--<script type="text/javascript">
+     alert("Turn your device horizontally for better experience");
+    </script-->
     
     
 </head>
@@ -18,13 +18,14 @@
     
 <body>
     
+    <div id="center-search">
 <!--Make sure the form has the autocomplete function switched off:-->
 <!-- form autocomplete="off" -->
   <div class="autocomplete" style="width:300px;">
     <input id="myInput" type="text" name="myCountry" placeholder="Book Title">
   </div>
 
-<button onclick="myFunction()">Search</button>
+    <button onclick="myFunction()">Search</button>
 
 <script>
 function autocomplete(inp, arr) {
@@ -125,16 +126,14 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var countries = ["Typographic Universe", "Shadow Type", "Typography Sketchbooks", "Type Matters", "Helvetica", "New Ornamental Type", "Draw Your Own Fonts", "Arabic for Designers", "Principles of Organising Type", "Type Idea Index", "Type Object", "How to Use Type", "Type on Screen","SEO", "WEB Search Skills", "Teaching Online", "Keeping Up With Emerging Technologies", "Cyber World", "The Invisible Web","Philosophy for Dummies", "Oxford Dictionary of Philosophy", "Politikens Filosofi Leksikon", "Filosofi", "Filosofisk Leksikon", "Det Filosofiske Blik", "Filosofi og Common Sense","Psykologiske Grundtemaer", "Body Language", "Breakpoint", "Your Brain and Business", "Guide to Communicating with Color", "A Brain for Business","The myths of creativity", "Breakthrough Thinking", "Thinkertoys", "Thinking in New Boxes", "Inspired", "Insight Out", "Design Attitude", "Creative Stuff", "Ideal Problem Solver","The Philosophy of Science", "Critical Theory", "Kvalitative Metoder", "What is This Thing Called Science","The Filter Bubble", "Everybody Writes", "The Future Does Not Compute", "Information Arts", "Information Design", "Living in Information", "Global Communication"];
+var countries = ["Typographic Universe", "Shadow Type", "Typography Sketchbooks", "Type Matters", "Helvetica", "New Ornamental Type", "Draw Your Own Fonts", "Arabic for Designers", "Principles of Organising Type", "Type Idea Index", "Type Object", "How to Use Type", "Type on Screen","SEO", "WEB Search Skills", "Teaching Online", "Keeping Up With Emerging Technologies", "Cyber World", "The Invisible Web","Philosophy for Dummies", "Oxford Dictionary of Philosophy", "Politikens Filosofi Leksikon", "Filosofi", "Filosofisk Leksikon", "Det Filosofiske Blik", "Filosofi og Common Sense","Psykologiske Grundtemaer", "Body Language", "Breakpoint", "Your Brain and Business", "Guide to Communicating with Color", "A Brain for Business","The myths of creativity", "Breakthrough Thinking", "Thinkertoys", "Thinking in New Boxes", "Inspired", "Insight Out", "Design Attitude", "Creative Stuff", "Ideal Problem Solver","The Philosophy of Science", "Critical Theory", "Kvalitative Metoder", "What is This Thing Called Science","The Filter Bubble", "Everybody Writes", "The Future Does Not Compute", "Information Arts", "Information Design", "Living in Information", "Global Communication", "Digital Media and Innovation", "Free Ride", "The Content Strategy Toolkit", "Remediation", "Writing on the Wall", "Writing and Editing for Digital Media", "Writing for the Web", "The Social Media Reader", "Moving Media Studies", "Etik", "12 Regler For Livet", "De 5 Valg", "Designing for Life", "Coaching", "Barking Up the Wrong Tree", "Eyes Wide Open", "Get in the Game", "The Go Giver", "Excuses!", "The Power of Habit", "What Money Can't Buy", "The good Paper", "The Craft of Research", "Exams and Assessments", "Problem-Oriented Project Work", "Tekter til Tiden", "Report writing in a Week"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), countries);
 </script>
-    
+ </div>   
 
-<button>Search</button>
-<br><br>
-
+<br/>
 
 <!--Sectiones on the frst shelf-->
 
@@ -145,15 +144,18 @@ autocomplete(document.getElementById("myInput"), countries);
 
     
 <!--Other shelves-->
-
-<div id="shelf5">SHELF5</div>
-<div id="shelf6">SHELF6</div>
-<div id="shelf7">SHELF7</div>
-<div id="shelf8">SHELF8</div> 
-<div id="shelf9">SHELF9</div>
-<div id="shelf10">SHELF10</div>
-<div id="shelf11">SHELF11</div>
-<div id="shelf12">SHELF12</div> 
+    
+<img id="table" src="img/table.svg">
+    <br/>
+<img id="desk" src="img/desk.svg">   
+<div id="shelf5" class="shadow-shelf">SHELF5</div>
+<div id="shelf6" class="shadow-shelf">SHELF6</div>
+<div id="shelf7" class="shadow-shelf">SHELF7</div>
+<div id="shelf8" class="shadow-shelf">SHELF8</div> 
+<div id="shelf9" class="shadow-shelf">SHELF9</div>
+<div id="shelf10" class="shadow-shelf">SHELF10</div>
+<div id="shelf11" class="shadow-shelf">SHELF11</div>
+<div id="shelf12" class="shadow-shelf">SHELF12</div> 
 
 
 <div id="myModal" class="modal">
@@ -264,7 +266,7 @@ function myFunction() {
     var captionText = document.getElementById("caption");
     shelf_1.onclick = function(){
       modal.style.display = "block";
-      modalImg.src = "img/shelf_typography.jpg";  /*WRONG PICTURE*/ 
+      modalImg.src = "img/philosophynew.png";  /*WRONG PICTURE*/ 
       captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
 }
 
@@ -289,7 +291,7 @@ function myFunction() {
     var captionText = document.getElementById("caption");
     shelf_1.onclick = function(){
       modal.style.display = "block";
-      modalImg.src = "img/Psychology.png";
+      modalImg.src = "img/psychologynew.png";
       captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
 }
 
@@ -302,16 +304,16 @@ function myFunction() {
   if (answer_creativity == true){
     var modal = document.getElementById('myModal');
     var shelf_2 = document.getElementById('shelf2');
-    shelf_1.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
-    shelf_1.style.animation = "pulse 2s infinite";
-    shelf_1.style.border = "2px solid #FFD300";
-    shelf_1.style.textShadow = "1px 1px 2px #ffffff" ;
-    shelf_1.style.cursor = "pointer" ;
-    shelf_1.innerHTML = "click here";
-    shelf_1.style.color = "black";
+    shelf_2.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
+    shelf_2.style.animation = "pulse 2s infinite";
+    shelf_2.style.border = "2px solid #FFD300";
+    shelf_2.style.textShadow = "1px 1px 2px #ffffff" ;
+    shelf_2.style.cursor = "pointer" ;
+    shelf_2.innerHTML = "click here";
+    shelf_2.style.color = "black";
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
-    shelf_1.onclick = function(){
+    shelf_2.onclick = function(){
       modal.style.display = "block";
       modalImg.src = "img/Creativity.png";
       captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
@@ -320,7 +322,43 @@ function myFunction() {
   }
     
     
-  /*SHELF 2 and 3- PERSONAL DEVELOPMENT*/ /*Cecilie, don't do it for this one because it is 2 shelves at once*/ 
+  /*SHELF 2 and 3- PERSONAL DEVELOPMENT*/
+    
+  var category_personal = ["Etik", "12 Regler For Livet", "De 5 Valg", "Designing for Life", "Coaching", "Barking Up the Wrong Tree", "Eyes Wide Open", "Get in the Game", "The Go Giver", "Excuses!", "The Power of Habit", "What Money Can't Buy"];
+  var answer_personal = category_personal.includes (book);
+  if (answer_personal == true){
+    var modal = document.getElementById('myModal');
+    var shelf_2 = document.getElementById('shelf2');
+    shelf_2.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
+    shelf_2.style.animation = "pulse 2s infinite";
+    shelf_2.style.border = "2px solid #FFD300";
+    shelf_2.style.textShadow = "1px 1px 2px #ffffff" ;
+    shelf_2.style.cursor = "pointer" ;
+    shelf_2.innerHTML = "click here";
+    shelf_2.style.color = "black";
+      var shelf_3 = document.getElementById('shelf3');
+    shelf_3.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
+    shelf_3.style.animation = "pulse 2s infinite";
+    shelf_3.style.border = "2px solid #FFD300";
+    shelf_3.style.textShadow = "1px 1px 2px #ffffff" ;
+    shelf_3.style.cursor = "pointer" ;
+    shelf_3.innerHTML = ".";
+    shelf_3.style.color = "#FFDF01";
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    shelf_2.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = "img/Personal Development.png";
+      captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
+}
+        shelf_3.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = "img/Personal Development.png";
+      captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
+}
+
+  }    
+
     
 
   /*SHELF 3- PHILOSOPHY OF SCIENCE*/
@@ -330,26 +368,62 @@ function myFunction() {
   if (answer_science == true){
     var modal = document.getElementById('myModal');
     var shelf_3 = document.getElementById('shelf3');
-    shelf_1.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
-    shelf_1.style.animation = "pulse 2s infinite";
-    shelf_1.style.border = "2px solid #FFD300";
-    shelf_1.style.textShadow = "1px 1px 2px #ffffff" ;
-    shelf_1.style.cursor = "pointer" ;
-    shelf_1.innerHTML = "click here";
-    shelf_1.style.color = "black";
+    shelf_3.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
+    shelf_3.style.animation = "pulse 2s infinite";
+    shelf_3.style.border = "2px solid #FFD300";
+    shelf_3.style.textShadow = "1px 1px 2px #ffffff" ;
+    shelf_3.style.cursor = "pointer" ;
+    shelf_3.innerHTML = "click here";
+    shelf_3.style.color = "black";
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
-    shelf_1.onclick = function(){
+    shelf_3.onclick = function(){
       modal.style.display = "block";
       modalImg.src = "img/Science.png";
       captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
 }
 
+  } 
+
+        
+  /*SHELF 3 and 4- STUDY SKILLS*/
+    
+      var category_study = ["The good Paper", "The Craft of Research", "Exams and Assessments", "Problem-Oriented Project Work", "Tekter til Tiden", "Report writing in a Week"];
+  var answer_study = category_study.includes (book);
+  if (answer_study == true){
+    var modal = document.getElementById('myModal');
+    var shelf_3 = document.getElementById('shelf3');
+    shelf_3.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
+    shelf_3.style.animation = "pulse 2s infinite";
+    shelf_3.style.border = "2px solid #FFD300";
+    shelf_3.style.textShadow = "1px 1px 2px #ffffff" ;
+    shelf_3.style.cursor = "pointer" ;
+    shelf_3.innerHTML = "click here";
+    shelf_3.style.color = "black";
+        var shelf_4 = document.getElementById('shelf4');
+    shelf_4.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
+    shelf_4.style.animation = "pulse 2s infinite";
+    shelf_4.style.border = "2px solid #FFD300";
+    shelf_4.style.textShadow = "1px 1px 2px #ffffff" ;
+    shelf_4.style.cursor = "pointer" ;
+    shelf_4.innerHTML = ".";
+    shelf_4.style.color = "#FFDF01";
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    shelf_3.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = "img/Study Skills.png";
+      captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
+}
+            shelf_4.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = "img/Study Skills.png";
+      captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
+}
+
   }
     
-    
-  /*SHELF 3 and 4- STUDY SKILLS*/  /*Cecilie, don't do it for this one because it is 2 shelves at once*/
-    
+
     
   /*SHELF 4- COMMUNICATION THEORY (not done)*/
     
@@ -358,28 +432,23 @@ function myFunction() {
   if (answer_communication == true){
     var modal = document.getElementById('myModal');
     var shelf_4 = document.getElementById('shelf4');
-    shelf_1.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
-    shelf_1.style.animation = "pulse 2s infinite";
-    shelf_1.style.border = "2px solid #FFD300";
-    shelf_1.style.textShadow = "1px 1px 2px #ffffff" ;
-    shelf_1.style.cursor = "pointer" ;
-    shelf_1.innerHTML = "click here";
-    shelf_1.style.color = "black";
+    shelf_4.style.backgroundImage = "linear-gradient(#FFB302, #FFCF00, #FFDF01)";
+    shelf_4.style.animation = "pulse 2s infinite";
+    shelf_4.style.border = "2px solid #FFD300";
+    shelf_4.style.textShadow = "1px 1px 2px #ffffff" ;
+    shelf_4.style.cursor = "pointer" ;
+    shelf_4.innerHTML = "click here";
+    shelf_4.style.color = "black";
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
-    shelf_1.onclick = function(){
+    shelf_4.onclick = function(){
       modal.style.display = "block";
       modalImg.src = "img/Communication.png";
       captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
 }
 
   }
-    
-    
-    
-    
-    
-    
+        
     
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];

@@ -1,7 +1,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 0.7em;
-    background-color: beige;
+    background-image: linear-gradient(rgba(192,192,192,1), rgba(192,192,192,0.5));
+    background-size: cover;
+    background-color: rgba (192,192,192,0)
 }
 
 #search{
@@ -11,7 +13,12 @@ body {
     background-color: beige;
     border: none;
     border-bottom: 1px solid black;
-    
+        
+}
+
+#center-search{
+    position: absolute;
+    margin-left: 15%;
 }
 
 
@@ -24,17 +31,18 @@ body {
 input {
   border: 1px solid transparent;
   background-color: #f1f1f1;
-  padding: 10px;
-  font-size: 16px;
+  padding: 5px;
+  font-size: 0.7rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 input[type=text] {
   background-color: #f1f1f1;
-  width: 100%;
+  width: 95%;
 }
 
 input[type=submit] {
-  background-color: DodgerBlue;
+  background-color: #FFE001;
   color: #fff;
   cursor: pointer;
 }
@@ -65,18 +73,17 @@ input[type=submit] {
 
 /*when navigating through the items using the arrow keys:*/
 .autocomplete-active {
-  background-color: DodgerBlue !important; 
-  color: #ffffff; 
+  background-color: #FFE001 !important; 
+  color: black; 
 }
 
 button {
 
     display: inline-block;
     border: none;
-    padding: 0.3rem 1.5rem;
-    margin: 0;
+    padding: 0.4rem 1.5rem;
     text-decoration: none;
-    background: #ffd000;
+    background: #FFE001;
     color: black;
     font-family: 'Gothic A1',sans-serif;
     font-size: 0.7rem;
@@ -87,6 +94,28 @@ button {
     -moz-appearance: none;
 }
 
+#table{
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    position: absolute;
+    margin-top: 27%;
+    margin-left: 45%;
+}
+
+#table-img path {
+  fill: #ffd000;
+}
+
+#desk{
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    position: absolute;
+    margin-top: 35%;
+    margin-left: -30%;  
+}
+
 .boxes {
     background-color: gray;
     color: gray;
@@ -95,85 +124,114 @@ button {
     height: 10%;
     float: left;
     font-size: 1em;
+    margin-top: 7%;
+    padding-bottom: 0.5%;
+    
 }
 
 #shelf5 {
     background-color: gray;
+    color: grey;
+    padding-bottom: 0.5%;
     width: 50%;
     height: 10%;
     float: left;
     margin-left: 5%;
     font-size: 1em;
+    margin-top: 5%;
+    border: 1px solid #17140F;
+}
+
+.shadow-shelf{
+    -webkit-box-shadow: -2px 9px 2px -6px rgba(122,113,94,1);
+-moz-box-shadow: -2px 9px 2px -6px rgba(122,113,94,1);
+box-shadow: -2px 9px 2px -6px rgba(122,113,94,1);
 }
 
 #shelf6 {
     background-color: gray;
+    color: gray;
     width: 40%;
     padding-bottom: 2%;
     float: left;
     margin-left: 50%;
-    margin-top: 5%;
+    margin-top: 4%;
     font-size: 1em;
+    border: 1px solid #17140F;
 }
 
 #shelf7 {
     background-color: gray;
+    color: gray;
     width: 25%;
     padding-bottom: 2%;
     float: left;
-    margin-top: 1%;
+    margin-top: 0%;
     margin-left: 10%;
     font-size: 1em;
+    border: 1px solid #17140F;
 }
 
 #shelf8 {
     background-color: gray;
+    color: gray;
     width: 30%;
     padding-bottom: 2%;
     float: left;
-    margin-top: 1%;
+    margin-top: 0%;
     margin-left: 50%;
     font-size: 1em;
+    border: 1px solid #17140F;
 }
 
 #shelf9 {
     background-color: gray;
+    color: gray;
     width: 25%;
     padding-bottom: 2%;
     float: left;
     margin-left: 10%;
-    margin-top: 1%;
+    margin-top: 0%;
     font-size: 1em;
+    border: 1px solid #17140F;
 }
 
 #shelf10 {
     background-color: gray;
+    color: gray;
+    color: gray;
     width: 30%;
     padding-bottom: 2%;
     float: left;
     margin-left: 50%;
-    margin-top: 1%;
+    margin-top: 0%;
     font-size: 1em;
+    border: 1px solid #17140F;
 }
 
 #shelf11 {
     background-color: gray;
+    color: gray;
     width: 40%;
     padding-bottom: 2%;
     float: left;
     margin-left: 50%;
-    margin-top: 5%;
+    margin-top: 4%;
     font-size: 1em;
+    border: 1px solid #17140F;
 }
 
 #shelf12 {
     background-color: gray;
+    color: gray;
     width: 70%;
     height: 10%;
     float: left;
     margin-left: 25%;
     margin-top: 3%;
     font-size: 1em;
+    border: 1px solid #17140F;
+    padding-bottom: 1%;
 }
 
 
@@ -246,8 +304,11 @@ button {
   position: absolute;
   top: 15px;
   right: 35px;
+    display: block;
+    padding: 0.1px 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 224, 1, 0.8);
   color: gray;
-text-shadow: 1px 1px #ffd000;
   font-size: 20px;
   font-weight: bold;
   transition: 0.3s;
