@@ -2,22 +2,24 @@ body {
     width: 100%;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(rgba(192,192,192,1), rgba(192,192,192,0.5));
+    background-image: linear-gradient(rgba(81, 138, 179, 1), rgba(81, 138, 179,0.5));
     background-color: rgba (192,192,192,0);
 }
 
 
 .center {
   margin: 0 auto;
-  width: 60%;
+  width: 100%;
+    max-width: 1000px;
   border: 3px solid #73AD21;
-  padding: 10px;
+  text-align: center;
 }
 
 h1 {
     font-size: 50px;
     color: black;
     text-shadow: black;
+    margin-top: 30%;
 
 }
 
@@ -28,23 +30,25 @@ button {
     padding: 0.6rem 1.5rem;
     text-decoration: none;
     color: black;
-    font-family: 'Gothic A1',sans-serif;
+    font-family: 'Roboto',sans-serif;
     font-size: 0.7rem;
     font-weight: bold;
     cursor: pointer;
     text-align: center;
     -webkit-appearance: none;
     -moz-appearance: none;
+    
 }
 
 #button-one{
     background: #FFE001;
-    position: absolute;
     padding: 10px 30px 10px 30px;
+    margin-top: 40%;
 }
 
 #button-two{
-    background: blue;
-    position: absolute;
+    background: #7C93A5;
+    margin-top: 5%;
+    padding: 10px 30px 10px 30px;
 }
 }
