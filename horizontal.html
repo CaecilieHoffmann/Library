@@ -20,14 +20,56 @@
   width: 100%;
     max-width: 1000px;
   text-align: center;
-}
-        
-    h1 {
-    margin-top: 20%;
         
         }
         
-    button {
+
+        
+                /* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) { 
+    
+    button { 
+      display: none!important;
+        visibility: hidden;
+}
+        
+        #turn {
+    margin-top: 40%;
+    margin-bottom: 20%;
+        
+        }
+        
+        #thanks {
+            display:none;
+        }
+        
+        }
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 1400px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) 
+{
+    img{
+        display: none;
+    }
+    
+    #turn {
+        display: none;
+    }
+    
+    
+    #thanks{
+        margin-top: 20%; 
+    }
+    
+    button { 
 
     display: inline-block;
     border: none;
@@ -44,17 +86,36 @@
     -moz-appearance: none;
     background: #FFE001;
     padding: 10px 30px 10px 30px;
-
+      
+}
+        
+        }
+        
+        
+}
     
     </style>
+    
+    
+    <script>
+    function example1() {
+        
+        navigator.vibrate([500]);
+    }
+    
+    </script>
     
     </head>
     
     
     <body>
-    <h1>Turn your device horizontally</h1>
+    <h2 id="turn">Turn your device horizontally</h2>
+    <h2 id="thanks">Thank you! :) </h2>
         
-       <a href="shelves.html"><button id="button-one" >Continue</button></a>
+    <img src="img2/turn-device.png" width="150px" height="150px">
+        <br/>
+        
+       <a href="shelves.html"><button>Continue</button></a>
         
         
     
