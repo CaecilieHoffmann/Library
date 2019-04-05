@@ -18,7 +18,7 @@
 <!--Make sure the form has the autocomplete function switched off:-->
 <!-- form autocomplete="off" -->
   <div class="autocomplete" style="width:300px;">
-    <input id="myInput" type="text" name="myCountry" placeholder="Book Title">
+    <input id="myInput" type="text" name="myCountry" placeholder="Book Title" value="">
   </div>
 
     <button onclick="myFunction()">Search</button>
@@ -158,6 +158,7 @@ autocomplete(document.getElementById("myInput"), countries);
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
   <div id="caption"></div>
+    <a href="shelves.html"><span class="find-another">Find Another</span></a>
 </div>    
     
 <script>
@@ -187,7 +188,7 @@ function myFunction() {
     shelf_1.onclick = function(){
       modal.style.display = "block";
       modalImg.src = "img2/typography.jpg";
-      captionText.innerHTML = ("Your book is here. To find another book, please refresh.");
+      captionText.innerHTML = ("Your book is here.");
 }
 
   }
