@@ -36,18 +36,8 @@ button {
     text-align: center;
     -webkit-appearance: none;
     -moz-appearance: none;
-    
-}
-
-#button-one{
     background: #FFE001;
     padding: 10px 30px 10px 30px;
     margin-top: 40%;
-}
-
-#button-two{
-    background: #7C93A5;
-    margin-top: 5%;
-    padding: 10px 30px 10px 30px;
-}
+    
 }
